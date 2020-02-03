@@ -11,8 +11,10 @@ namespace Week3_Exercises
     {
         static void Main(string[] args)
         {
+            WriteLine("Query Syntax");
             QuerySyntax();
 
+            WriteLine("Lambda Syntax");
             LambdaSyntax();
         }
 
@@ -29,11 +31,21 @@ namespace Week3_Exercises
             {
                 WriteLine(number.ToString()); 
             }
+            WriteLine();
         }
 
         static void LambdaSyntax()
         {
+            int[] numbers = { 1, 5, 3, 6, 11, 2, 15, 21, 13, 12, 10 };
 
+            var outputNumbers = numbers
+                .Where(n => n > 5)
+                .OrderByDescending(n => n);
+
+            foreach (int number in outputNumbers)
+            {
+                WriteLine(number.ToString());
+            }
         }
     }
 }
