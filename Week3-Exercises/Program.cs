@@ -31,7 +31,7 @@ namespace Week3_Exercises
             {
                 WriteLine(number.ToString()); 
             }
-            WriteLine();
+            WriteLine(); 
         }
 
         static void LambdaSyntax()
