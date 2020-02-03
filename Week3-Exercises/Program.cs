@@ -27,7 +27,7 @@ namespace Week3_Exercises
 
             foreach(int number in outputNumbers)
             {
-                WriteLine(number.ToString());
+                WriteLine(number.ToString()); 
             }
         }
 
