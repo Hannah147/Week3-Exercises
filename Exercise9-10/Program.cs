@@ -21,7 +21,8 @@ namespace Exercise9_10
         static void QuerySyntax()
         {
             var query = from customer in GetCustomers()
-                        where customer.City == "Dublin"
+                        where customer.City == "Dublin" || customer.City == "Galway"
+                        orderby customer.Name
                         select customer;
 
             foreach(var item in query)
@@ -33,7 +34,8 @@ namespace Exercise9_10
         static void LambdaSyntax()
         {
             var query = GetCustomers()
-                .Where(n => n.City == "Dublin");
+                .Where(n => n.City == "Dublin" || n.City == "Galway")
+                .OrderBy(n => n.Name);
 
             foreach (var item in query)
             {

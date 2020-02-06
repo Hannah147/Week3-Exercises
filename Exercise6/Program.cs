@@ -23,7 +23,6 @@ namespace Exercise6
             string[] names = { "Mary", "Joseph", "Michael", "Sarah", "Margaret", "John" };
 
             var query = from name in names
-                        where 
                         select name;
 
             foreach (var item in query)
