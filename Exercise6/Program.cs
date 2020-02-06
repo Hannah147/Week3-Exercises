@@ -23,10 +23,9 @@ namespace Exercise6
             string[] names = { "Mary", "Joseph", "Michael", "Sarah", "Margaret", "John" };
 
             var query = from name in names
-                        orderby name ascending
                         select name;
 
-            foreach(var item in query)
+            foreach (var item in query)
             {
                 WriteLine(item);
             }
@@ -36,10 +35,9 @@ namespace Exercise6
         {
             string[] names = { "Mary", "Joseph", "Michael", "Sarah", "Margaret", "John" };
 
-            var query = names
-                .OrderBy(n => n);
+            var query = names;
 
-            foreach(var item in query)
+            foreach (var item in query)
             {
                 WriteLine(item);
             }
@@ -55,3 +53,5 @@ namespace Exercise6
         }
     }
 }
+
+

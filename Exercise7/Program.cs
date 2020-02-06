@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Console;
 
-namespace Exercise6
+namespace Exercise7
 {
     class Program
     {
@@ -55,3 +55,4 @@ namespace Exercise6
         }
     }
 }
+
