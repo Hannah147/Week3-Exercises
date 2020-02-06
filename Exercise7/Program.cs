@@ -26,7 +26,7 @@ namespace Exercise6
                         orderby name ascending
                         select name;
 
-            foreach(var item in query)
+            foreach (var item in query)
             {
                 WriteLine(item);
             }
@@ -39,7 +39,7 @@ namespace Exercise6
             var query = names
                 .OrderBy(n => n);
 
-            foreach(var item in query)
+            foreach (var item in query)
             {
                 WriteLine(item);
             }
